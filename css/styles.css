@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 10rem 9% 2rem;
+}
+
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;   
+       
+    }
+}
+
+@media (max-width: 991px) {
+    section{
+        padding: 10rem 3% 2rem; 
+       
+    }
+ }
+
+ @media (max-width: 450px){
+    html{
+        font-size: 50%
+    }
+ }

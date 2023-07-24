@@ -1,0 +1,6 @@
+.logo_nombre{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+}

@@ -1,0 +1,20 @@
+.about_img  img{
+    width: 35vw;
+    border-radius: 50%;
+    border: 10px solid var(--main-color);
+    
+}
+
+@media (max-width: 768px) {
+    .about_img img{
+        width: 60vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .about_img img{
+        width: 90vw;
+       
+    }
+}

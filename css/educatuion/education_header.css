@@ -1,0 +1,30 @@
+.education_title{
+    position: relative;
+    z-index: -100;
+
+}
+
+.education_tittle-front{
+    font-size: 9.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--second-bg-color);
+}
+
+
+.education_back{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.education_back h2{
+    text-transform: capitalize;
+    font-size: 5.5rem;
+    font-weight: 800;
+   
+}

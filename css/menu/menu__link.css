@@ -1,0 +1,48 @@
+
+
+.menu__link{
+    text-decoration: none;
+    color: #808080;
+    margin-right: 1.25rem;
+    transition: .3s linear;
+
+}
+
+/* .menu-item:first-child a{
+    color:red;
+} */
+
+
+.menu__link.activo{
+    color: var(--main-color);
+    font-weight: bold;
+   
+    text-decoration: underline;
+    
+}
+
+.menu__link.activo:hover{
+    color: var(--text-color);
+
+    
+    
+}
+
+/* .menu__link:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+} */
+
+
+/* @media (max-width: 768px) {
+ 
+
+    .menu__link{
+        display: block;
+        font-size: 2rem;
+      
+
+    }
+
+    
+} */

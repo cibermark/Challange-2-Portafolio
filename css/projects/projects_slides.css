@@ -1,0 +1,192 @@
+.projects_slides{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    /* padding:10px;  we could use padding instead of margin in the .panel code*/
+    
+    
+}
+
+.project_slide {
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:60vh;
+    border-radius: 50px;
+    flex:0.5;  /*flex-grow*/
+    position: relative;
+    transition: flex 0.5s ease-in;
+    cursor:pointer;
+    margin:10px;
+    filter: blur(.9px);
+    z-index: 1;
+    
+}
+
+.project_slide   h4{
+    position: absolute;
+    bottom: 120px;
+    color: white;
+    opacity:0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+    left: 40px;
+    margin-bottom: 1rem;
+}
+
+.project_slide  p{
+    position: absolute;
+    bottom: 90px;
+    color: white;
+    left: 40PX;
+    width: 90%;
+    opacity:0;
+    font-size: 1.6rem;
+    
+}
+
+.project_slide  a{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity:0;
+
+    background-color: var(--second-bg-color);
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.project_slide a i{
+    font-size: 2rem;
+    color: white;
+}
+
+
+.project_slide.active {
+    flex:5;  /* by doing this, when there is a chosen picture it will grow 5 times bigger*/
+    filter: blur(0);
+   
+   
+}
+
+.project_slide.active:hover{
+    cursor: auto;
+}
+
+.project_slide.active  h4{
+    opacity: 1;
+    transition:opacity 0.4s ease-in 0.4s;
+}
+
+.project_slide.active  p{
+    opacity: 1;
+    transition:opacity 0.4s ease-in 0.4s;
+}
+
+.project_slide.active a{
+    opacity: .7;
+    transition:opacity 0.4s ease-in 0.4s;
+}
+
+
+.project_slide.active a i{
+    opacity: 1;
+    transition:opacity 0.4s ease-in 0.4s;
+}
+
+
+.project_slide.active:hover{
+    outline:1px solid var(--main-color);
+}
+
+.project_slide.active a:hover{
+   background-color: var(--main-color);
+}
+
+.project_slide.active a i:hover{
+    color: var(--second-bg-color);
+}
+
+
+
+
+@media (max-width: 378px){
+    .project_slide h4{
+        bottom: 50px;
+        font-size: 1.8rem;
+    }
+    
+    .project_slide p{
+        display: none;
+    }
+
+    .project_slide  a{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+       
+    
+    }
+    
+    .project_slide a i{
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .project_slide   h4{
+        font-size: 1.5rem;
+        left: 40px;
+        margin-bottom: 1rem;
+    }
+    
+    .project_slide  p{
+        font-size: 1.5rem;
+        left: 40px;
+        width: 90%;
+    } 
+    .projects_slides{
+        flex-direction: column;
+        height: 90vh;
+        width: 90%;
+    }
+
+    
+    
+    
+}
+
+
+@media (max-width: 378px){
+    .project_slide h4{
+        bottom: 50px;
+        font-size: 2rem;
+    }
+    
+    .project_slide p{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .project_slide   h4{
+        font-size: 1.5rem;
+        left: 40px;
+        margin-bottom: 1rem;
+        bottom: 100px;
+    }
+    
+    .project_slide  p{
+        font-size: 1.5rem;
+        left: 40px;
+        width: 90%;
+      
+    }
+    
+    
+}
+

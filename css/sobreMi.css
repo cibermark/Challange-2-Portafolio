@@ -1,0 +1,50 @@
+.sobreMi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sobreMi img{
+    width: 35vw;
+    animation: floatImg 4s ease-in-out infinite;
+    border-radius: 50%;
+    border: 10px solid var(--main-color);
+    
+}
+
+@keyframes floatImg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-2.4rem);  
+    }
+    0%{
+        transform: translateY();  
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .sobreMi {
+        flex-direction: column;
+
+    }
+
+    .sobreMi img{
+        width: 60vw;
+        margin-top: 4rem;
+    }
+
+
+}
+
+@media (max-width: 365px){
+    .sobreMi img{
+        width: 90vw;
+    }
+}

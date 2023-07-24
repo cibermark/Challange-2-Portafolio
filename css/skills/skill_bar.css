@@ -1,0 +1,27 @@
+.skill_bar_progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--second-bg-color);
+    overflow: hidden;
+}
+
+.bar_progres{
+    background: var(--main-color);
+    height:100%;
+    border-top-right-radius:2px ;
+    border-bottom-right-radius:2px ;
+}
+
+.bar_progres.w-90{
+    width: 86%;
+}
+
+.bar_progres.w-75{
+    width: 71%;
+}
+
+.bar_progres.w-85{
+    width: 81%;
+}

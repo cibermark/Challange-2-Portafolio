@@ -1,0 +1,13 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bh-color);
+
+}
+
+
+@media (max-width: 768px) {
+   .about{flex-direction: column-reverse;} 
+}

@@ -1,0 +1,31 @@
+.div_inputs{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: space-between;
+
+
+}
+
+.div_inputs.textarea{
+    width: 100%;
+}
+
+.div_inputs .input-message-error{
+    display: none;
+}
+
+
+.input-container--invalid .input-message-error {
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+
+  @media (max-width: 450px){
+    .div_inputs {
+        width: 100%;
+        
+    }
+  }

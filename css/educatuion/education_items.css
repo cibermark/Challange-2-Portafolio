@@ -1,0 +1,30 @@
+.education_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 4rem ;
+    max-width: 80vw;
+    margin:0 auto;
+    margin-top: 4rem;
+    
+    
+}
+
+.education_item{
+    flex: 0 0 calc(50% - 2rem);
+    background-color: var(--second-bg-color);
+    padding: 20px 40px;
+    transition: .3s ease-in-out;
+}
+
+.education_item:hover{
+    transform: scale(1.1);
+    border: 1px solid var(--main-color);
+}
+
+@media (max-width: 768px) {
+    .education_items{
+       flex-direction: column;
+        
+        
+    }
+}

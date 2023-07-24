@@ -1,0 +1,36 @@
+.hobbies_title{
+    position: relative;
+    z-index: -100;
+}
+
+.hobbies_tittle-front{
+    font-size: 9.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--second-bg-color);
+    /* -webkit-text-stroke: 1px   rgba(255, 255, 0, 0.094) ; */
+    
+}
+
+
+.back{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.back h2{
+    text-transform: capitalize;
+    font-size: 5.5rem;
+    font-weight: 800;
+    
+   
+}
+
+
+
